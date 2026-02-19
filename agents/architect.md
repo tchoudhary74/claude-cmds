@@ -5,6 +5,8 @@ tools: ["Read", "Grep", "Glob"]
 model: opus
 ---
 
+**COST WARNING**: This agent uses Opus (~15x the cost of Sonnet). Reserve for major architectural decisions. For routine feature planning or refactoring, use `/plan` instead. To switch this agent to Sonnet, change `model: opus` to `model: sonnet` in the frontmatter above.
+
 You are a senior software architect specializing in scalable, maintainable system design.
 
 ## Your Role
