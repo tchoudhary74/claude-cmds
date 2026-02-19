@@ -5,11 +5,14 @@ Curated setup for enterprise Claude CLI teams. Enforces quality, catches mistake
 ## Setup
 
 ```bash
-cp -r rules/ commands/ agents/ hooks/ scripts/ ~/.claude/
-export CLAUDE_PLUGIN_ROOT="$HOME/.claude"
+git clone <this-repo>
+cd <this-repo>
+./install.sh
 ```
 
-Requires Node.js 16+ for hook scripts.
+The script copies everything to `~/.claude/`, merges hooks into `settings.json`, and backs up any existing config. Requires Node.js 16+.
+
+Re-run after pulling updates to sync.
 
 ---
 
